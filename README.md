@@ -48,7 +48,7 @@ cd /dpds/ORB_SLAM3/
 
 You may want better control of what's inside the image. To this matter you will find here : 
 
-- Image *Dockerfile*. Note that **orb-slam-3-ready** lays on top of **realsense-ready**. Modify that by changing `FORM` instruction in *Dockerfile-orb*. Don't forget general usage dependencies that came along realsense-ready image !
+- Image *Dockerfile*. Note that **orb-slam-3-ready** lays on top of **realsense-ready**. Modify that by changing `FROM` instruction in *Dockerfile-orb*. Don't forget general usage dependencies that came along realsense-ready image !
 
 - *docker-compose.yml* to start container automatically and for Kubernetes-like deployement. Note that stopping a container removes it. An external *app* directory is linked to the containers */app* one in order to provide a permanent save point.
 
